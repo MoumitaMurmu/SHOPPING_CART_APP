@@ -1,0 +1,90 @@
+.card_style{
+    cursor: pointer;
+    transition: .3s;
+}
+  
+  .smalltrash{
+      display:none;
+  }
+  
+  
+  .card_style:hover{
+      box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.082);
+  }
+  
+  .iteamsdetails{
+      max-width: 420px;
+      margin: auto;
+      display:flexbox;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.082);
+      color: white;
+  }
+  #con{
+    height: 45px;
+  }
+  .items_img{
+      flex: .4;
+  }
+  .items_img img{
+      width: 20rem;
+      height: 20rem;
+      border-radius: 5px;
+      margin-top: 10px;
+      margin-left: 10px;
+     
+  }
+  /* #demo-positioned-menu{
+    background-color: black;
+    
+  } */
+  .card_details{
+    background-color: black;
+   color: white;
+   text-decoration: none;
+   
+  }
+  /* #list{
+    border: 1px solid black;
+    height: 200px;
+    width: 500px;
+    background-color: brown;
+  } */
+  
+  .details{
+   
+      flex: .2;
+  };
+  
+ 
+  
+  @media (max-width:772px){
+      .iteamsdetails{
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+  }
+  
+  @media (max-width:450px){
+      .smalltrash{
+          display: block;
+      }
+      .largetrash{
+          display:none;
+      }
+      .emptycart_img{
+          margin-right: 50px;
+      }
+      .smallclose{
+          display: none;
+      }
+  
+      /* individual iteams details */
+     
+      .items_img img{
+          width: 16rem;
+      }
+      
+  }
